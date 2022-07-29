@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css"> -->
     <link rel="stylesheet" href="./style.css">
-    <title>iamdevin</title>
+    <title>I Am Devin</title>
 </head>
 <body>
     <div class="imgContainer">
@@ -65,6 +63,20 @@
 		</div>
 	</div>
 
-    <script src="mainn.js"></script>
+    <script src="assets/countdowntime/moment.min.js"></script>
+	<script src="assets/countdowntime/moment-timezone.min.js"></script>
+	<script src="assets/countdowntime/moment-timezone-with-data.min.js"></script>
+	<script src="assets/countdowntime/countdowntime.js"></script>
+	<script>
+		$('.countdown-container').countdown100({
+			endtimeYear: 0,
+			endtimeMonth: 0,
+			endtimeDate: 35,
+			endtimeHours: 19,
+			endtimeMinutes: 0,
+			endtimeSeconds: 0,
+			timeZone: "" 
+		});
+	</script>
 </body>
 </html>
