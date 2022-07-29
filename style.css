@@ -1,0 +1,198 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+  
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../assets/fonts/Montserrat/Montserrat-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url('../assets/fonts/Montserrat/Montserrat-SemiBold.ttf'); 
+} 
+
+@font-face {
+    font-family: Playlist Script;
+    src: url('../assets/fonts/Playlist/Playlist Script.otf'); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+	color: #666666;
+	height: 100%;
+	background-color: #fff;
+}
+
+.imgContainer{
+    display: block;
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+}
+
+.slide-item{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.outer-container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+.outer-container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+  }
+
+.top-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-container{
+    display: block;
+    flex-grow: 1;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.logo-container a{
+    height: 100%;
+}
+
+.logo-container .logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 270px;
+}
+
+.countdown-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 36px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.countdown-container .section{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-right: 22px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.countdown-container .numeric{
+    min-width: 46px;
+    font-family: Montserrat-Regular;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1;
+}
+
+.countdown-container .text{
+    font-family: Montserrat-Regular;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1;
+    padding-bottom: 2px;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 90px;
+    padding-top: 80px;
+}
+
+.content-container .text{
+    font-size: 160px;
+    font-family: Playlist Script;
+    color: #fff;
+    line-height: 1.1;
+    text-align: center;
+    padding-bottom: 55px;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.icons-container .icon{
+    display: flex;
+    color: #999;
+    font-size: 18px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background-color: transparent;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    margin: 3px;
+    touch-action: manipulation;
+    text-decoration: none;
+}
+
+.icons-container .icon:hover {
+    background-color: #fff;
+    color: #555;
+}
+
+
