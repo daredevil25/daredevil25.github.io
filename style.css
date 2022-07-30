@@ -86,7 +86,7 @@ body{
 }
 
 .logo-container{
-    display: block;
+    display: flex;
     flex-grow: 1;
     margin-right: 30px;
     margin-bottom: 10px;
@@ -94,12 +94,14 @@ body{
 }
 
 .logo-container a{
+    display: block;
     height: 100%;
+    align-content: center;
 }
 
 .logo-container .logo{
-    margin-top: auto;
-    margin-bottom: auto;
+    display: block;
+    min-width: 270px;
     max-width: 270px;
 }
 
@@ -195,4 +197,24 @@ body{
     color: #555;
 }
 
+@media (max-width: 900px) {
 
+    .logo-container a{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .countdown-container{
+        padding-right: 36px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer{
+        display: block;
+    }
+    .icons-container{
+        align-self: center;
+    }
+}
