@@ -65,6 +65,7 @@ body{
     padding-bottom: 40px;
     padding-top: 20px;
 }
+
 .outer-container::after {
     content: "";
     display: block;
@@ -75,7 +76,7 @@ body{
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.5);
-  }
+}
 
 .top-bar{
     width: 100%;
@@ -120,6 +121,10 @@ body{
     margin-right: 22px;
     margin-bottom: 8px;
     margin-top: 8px;
+}
+
+.countdown-container .section.last{
+    margin-right: 0;
 }
 
 .countdown-container .numeric{
@@ -199,6 +204,10 @@ body{
 
 @media (max-width: 900px) {
 
+    .logo-container{
+        margin-left: 30px;
+    }
+
     .logo-container a{
         margin-left: auto;
         margin-right: auto;
@@ -206,9 +215,14 @@ body{
     }
 
     .countdown-container{
+        max-width: 270px;
         padding-right: 36px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .countdown-container .section:nth-child(even){
+        margin-right: 0;
     }
 
     .footer{
@@ -216,5 +230,42 @@ body{
     }
     .icons-container{
         align-self: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .logo-container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .logo-container .logo{
+        display: block;
+        min-width: 200px;
+        max-width: 200px;
+    }
+
+    .countdown-container{
+        max-width: 160px;
+        margin: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .countdown-container .section{
+        margin-right: 0;
+    }
+    .countdown-container .section .numeric{
+        font-size: 22px;
+    }
+    .countdown-container .section .text{
+        font-size: 18px;
+    }
+    .content-container .text{
+        font-size: 120px;
+        font-family: Playlist Script;
+        color: #fff;
+        line-height: 1.1;
+        text-align: center;
+        padding-bottom: 55px;
     }
 }
